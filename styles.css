@@ -42,6 +42,10 @@
     height: 100px;
 }
 
+.body {
+    overflow-x: hidden;
+}
+
 .navbar {
     background-color: black;
     align-items: center;
@@ -194,11 +198,22 @@
     margin: 30px 30px 30px 30px;
     text-align: center;
     padding: 25px;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .blockquotediv {
+        font-size: 14px;
+        padding: 10px;
+        margin: 5% 5%;
+    }
 }
 
 .blockquote {
-    padding: 50px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
+
 
 .happydiv {
     margin-bottom: -35px;
