@@ -193,6 +193,10 @@
     border-radius: 25px;
     margin: 30px 30px 30px 30px;
     text-align: center;
+    padding: 25px;
+}
+
+.blockquote {
     padding: 50px;
 }
 
