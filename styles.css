@@ -5,35 +5,34 @@
     scroll-behavior: smooth;
 }
 
-/* Style de la barre d'annonce */
 .announcement-bar {
-    background-color: #000000; /* Couleur de fond de la barre */
-    color: #CCAC3B; /* Couleur du texte */
+    background-color: #000000;
+    color: #CCAC3B;
     padding: 10px 0;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    overflow: hidden; /* Masque le texte en dehors de la zone visible */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ajoute une légère ombre */
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .announcement-wrapper {
     display: flex;
-    animation: scrollText 10s linear infinite; /* Animation plus longue pour défilement fluide */
+    animation: scrollText 10s linear infinite;
 }
 
 .announcement-text {
     font-size: 16px;
     font-weight: bold;
-    white-space: nowrap; /* Empêche le texte de se dérouler sur plusieurs lignes */
-    padding-right: 50px; /* Espace entre les textes */
+    white-space: nowrap;
+    padding-right: 50px;
 }
 
 /* Animation continue des textes */
 @keyframes scrollText {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); } /* Défile tout le contenu sans interruption */
+    100% { transform: translateX(-100%); }
 }
 
 .header {
@@ -53,8 +52,8 @@
     height: 100px;
     display: flex;
     margin-top: 25px;
-    padding: 0 1rem; /* Padding horizontal pour espacer la navbar du bord */
-    box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+    padding: 0 1rem;
+    box-sizing: border-box;
 }
 
 .logo-container {
@@ -81,17 +80,17 @@
 
 .navul {
     display: flex;
-    justify-content: space-between; /* Répartit l'espace entre les éléments */
-    flex: 1; /* Permet à .navul de s'étendre pour occuper l'espace disponible */
-    padding: 0; /* Retire le padding interne pour éviter les décalages */
-    margin: 25px; /* Retire les marges externes pour un alignement correct */
+    justify-content: space-between;
+    flex: 1;
+    padding: 0;
+    margin: 25px;
 }
 
 .navul li {
-    margin: 0; /* Retire les marges pour les éléments de la liste */
+    margin: 0;
     flex: 1;
     margin: 10px;
-    max-width: 125px; /* Limite la largeur maximale pour chaque élément <li> */
+    max-width: 125px;
 }
 
 .navul li a {
@@ -99,11 +98,11 @@
     color: white;
     border-radius: 5px;
     background-color: black;
-    justify-content: center; /* Centre le texte horizontalement */
-    align-items: center; /* Centre le texte verticalement */
-    padding: 0.5rem 1rem; /* Ajuste le padding pour compenser la largeur */
-    text-decoration: none; /* Enlève le soulignement des liens */
-    width: 100%; /* Assure que le lien occupe toute la largeur de l'élément <li> */
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    width: 100%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -112,55 +111,54 @@
     color: #000000;
 }
 
-/* Styles pour les petits écrans */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column; /* Aligne les éléments de la navbar en colonne */
-        align-items: center; /* Centre les éléments horizontalement */
-        height: auto; /* Ajuste la hauteur automatiquement en fonction du contenu */
+        flex-direction: column;
+        align-items: center;
+        height: auto;
     }
 
     .logo-container,
     .title-image {
         margin-top: -2.5rem;
-        margin-bottom: 2.5rem; /* Ajoute un espacement sous le logo et l'image titre */
+        margin-bottom: 2.5rem;
     }
 
     .logo-container img {
         margin-top: 1rem;
-        height: 200px; /* Hauteur fixe pour l'image du logo */
-        width: 200px; /* Largeur fixe pour l'image du logo */
+        height: 200px;
+        width: 200px;
     }
 
     .title-image img {
-        height: 150px; /* Hauteur fixe pour l'image titre */
-        width: 150px; /* Largeur fixe pour l'image titre */
+        height: 150px;
+        width: 150px;
         margin-top: 1.5rem;
-        margin-left: -2rem; /* Décalage vers la gauche de l'image titre */
+        margin-left: -2rem;
     }
 
     .navul {
         display: flex;
-        flex-direction: row; /* Aligne les éléments en ligne */
-        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
-        gap: 0.5rem; /* Espace entre les colonnes */
-        width: 100%; /* Occupe toute la largeur disponible */
-        max-width: 500px; /* Définir une largeur maximale pour les deux colonnes */
-        align-items: flex-start; /* Aligne les éléments au début du conteneur */
-        margin-top: 1rem; /* Espace au-dessus de la liste des liens */
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        width: 100%;
+        max-width: 500px;
+        align-items: flex-start;
+        margin-top: 1rem;
         margin-left: -1rem;
     }
 
     .navul li {
-        flex: 1 0 45%; /* Chaque élément prend environ 45% de la largeur disponible */
-        margin-bottom: 0.25rem; /* Réduit l'espace vertical entre les éléments de la liste */
-        padding: 0.25rem 0; /* Réduit le padding vertical pour réduire l'espace entre les liens */
-        box-sizing: border-box; /* Inclut le padding dans la largeur totale */
-        justify-content: center; /* Centre les liens à l'intérieur des éléments <li> */
+        flex: 1 0 45%;
+        margin-bottom: 0.25rem;
+        padding: 0.25rem 0;
+        box-sizing: border-box;
+        justify-content: center;
     }
 
     .navul li a {
-        padding: 0.5rem 1rem; /* Ajuste le padding pour les liens */
+        padding: 0.5rem 1rem;
     }
 }
 
@@ -177,8 +175,8 @@
 
 .roardiv img {
     display: flex;
-    justify-content: center; /* Centre le titre horizontalement */
-    width: 100%; /* Assure que le conteneur prend la largeur totale */
+    justify-content: center;
+    width: 100%;
 }
 
 .borndiv {
@@ -228,15 +226,14 @@
     margin-top: 20px;
 }
 
-/* Conteneur principal pour le titre et l'image */
 #roadmap {
     display: flex;
-    flex-direction: column; /* Dispose les enfants en colonne : le titre au-dessus de l'image */
-    align-items: center;    /* Centre horizontalement le titre et l'image */
-    justify-content: center; /* Centre verticalement le titre et l'image */
-    text-align: center; /* Centre le texte du titre */
-    background-color: rgb(0, 0, 0); /* Couleur de fond pour le conteneur */
-    padding: 20px; /* Ajoute du padding pour un meilleur espacement */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
     margin-bottom: -50px;
 }
 
@@ -246,44 +243,44 @@
 
 .rdtitle img {
     display: flex;
-    justify-content: center; /* Centre le titre horizontalement */
-    width: 100%; /* Assure que le conteneur prend la largeur totale */
-    margin-bottom: 10px; /* Espacement entre le titre et l'image */
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 
 #roadmap img {
-    max-width: 100%; /* Assure que l'image ne dépasse pas la largeur du conteneur */
+    max-width: 100%;
     margin-top: -50px;
-    height: auto;    /* Maintient le ratio de l'image */
+    height: auto;
 }
 
 .roadiv {
     display: flex;
     justify-content: center;
     border: 1px solid #000000;
-    margin-top: -25px; /* Supprime toute marge externe supérieure */
-    padding-bottom: 0; /* Assure qu'il n'y a pas de padding en bas */
+    margin-top: -25px;
+    padding-bottom: 0;
 }
 
 .roadlist {
     font-weight: bolder;
     color: #CCAC3B;
     display: flex;
-    flex-direction: column; /* Pour que les éléments de la liste soient en colonne */
-    align-items: center; /* Centre les éléments de la liste */
-    margin: 0; /* Supprime toute marge externe */
-    padding-bottom: 20px; /* Contrôle l'espacement entre les paragraphes */
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding-bottom: 20px;
 }
 
 .roadlist li {
-    list-style-type: none; /* Supprime les puces des éléments de la liste */
+    list-style-type: none;
     margin-bottom: 15px;
 }
 
 .roadlist p {
     margin: 0;
-    text-align: center; /* Centre le texte à l'intérieur du paragraphe */
+    text-align: center;
 }
 
 #market {
@@ -292,21 +289,21 @@
 
 .snpdiv {
     display: flex;
-    justify-content: center; /* Centre l'image horizontalement */
-    align-items: center; /* Centre l'image verticalement */
-    height: 100%; /* Assure que la div prend toute la hauteur du conteneur parent */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .snpdiv img {
-    width: 50%; /* Ajuste la taille de l'image à 50% de la largeur du conteneur */
-    object-fit: contain; /* S'assure que l'image garde ses proportions */
+    width: 50%;
+    object-fit: contain;
 }
 
 .mmtitle img {
     display: flex;
-    justify-content: center; /* Centre le titre horizontalement */
-    width: 100%; /* Assure que le conteneur prend la largeur totale */
-    margin-bottom: 10px; /* Espacement entre le titre et l'image */
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 #tokenomics {
@@ -315,8 +312,8 @@
 
 .tokenTitle img {
     display: flex;
-    justify-content: center; /* Centre le titre horizontalement */
-    width: 100%; /* Assure que le conteneur prend la largeur totale */
+    justify-content: center;
+    width: 100%;
     margin-top: 50px;
 }
 
@@ -324,8 +321,8 @@
     display: flex;
     justify-content: center;
     border: 1px solid #000000;
-    margin-top: -25px; /* Supprime toute marge externe supérieure */
-    padding-bottom: 0; /* Assure qu'il n'y a pas de padding en bas */
+    margin-top: -25px;
+    padding-bottom: 0;
 }
 
 .tokenlist li p {
@@ -333,26 +330,26 @@
     color: #CCAC3B;
     justify-content: center;
     display: flex;
-    margin: 0; /* Supprime toute marge externe */
-    padding-bottom: 20px; /* Contrôle l'espacement entre les paragraphes */
+    margin: 0;
+    padding-bottom: 20px;
 }
 
 
 .casino {
     display: flex;
-    justify-content: center; /* Centre horizontalement */
-    align-items: center; /* Centre verticalement */
-    height: 100vw; /* Occupe 100% de la hauteur de la vue */
-    width: 100vw; /* Occupe 100% de la largeur de la vue */
-    overflow: hidden; /* Évite les barres de défilement si l'image dépasse */
+    justify-content: center;
+    align-items: center;
+    height: 100vw;
+    width: 100vw;
+    overflow: hidden;
     margin-bottom: 15px;
 }
 
 #rotateImage {
-    max-width: 100%; /* L'image ne dépasse jamais la largeur de la fenêtre */
-    max-height: 100%; /* L'image ne dépasse jamais la hauteur de la fenêtre */
-    transform-origin: center; /* Centre la rotation */
-    animation: rotate 4s linear infinite; /* Rotation continue sur 4 secondes */
+    max-width: 100%;
+    max-height: 100%;
+    transform-origin: center;
+    animation: rotate 4s linear infinite;
 }
 
 @keyframes rotate {
@@ -366,19 +363,19 @@
 
 #community {
     width: 100%;
-    text-align: center; /* Centre le titre horizontalement */
+    text-align: center;
     background-color: #000000;
-    padding: 0; /* Supprime tout padding */
-    margin: 0; /* Supprime toute marge externe */
+    padding: 0;
+    margin: 0;
 }
 
 .communityTitle img {
     display: block;
-    margin: 0 auto; /* Centre l'image horizontalement */
+    margin: 0 auto;
     width: auto;
     max-width: 100%;
-    padding: 0; /* Supprime tout padding */
-    margin-bottom: 10px; /* Contrôle l'espacement sous l'image */
+    padding: 0;
+    margin-bottom: 10px;
 }
 
 .cmdiv {
@@ -387,13 +384,12 @@
 
 .cmdiv img {
     display: flex;
-    justify-content: center; /* Centre le titre horizontalement */
-    width: 100%; /* Assure que le conteneur prend la largeur totale */
+    justify-content: center;
+    width: 100%;
 }
 
-/* Style général du footer */
 .footer {
-    background-color: #000000; /* Couleur de fond */
+    background-color: #000000;
     padding: 20px 0;
     text-align: center;
     color: #fff;
@@ -413,14 +409,14 @@
 }
 
 .footer-logo img {
-    width: 150px; /* Ajuste la taille du logo */
+    width: 150px;
     margin-bottom: 20px;
 }
 
 .footer-icons {
     display: flex;
     margin-top: -55px;
-    gap: 20px; /* Espace entre les icônes */
+    gap: 20px;
 }
 
 .footer-icons a {
@@ -428,25 +424,24 @@
 }
 
 .footer-icons img {
-    width: 40px; /* Taille des icônes */
-    transition: transform 0.3s ease; /* Effet de survol */
+    width: 40px;
+    transition: transform 0.3s ease; 
 }
 
 .footer-icons img:hover {
-    transform: scale(1.1); /* Agrandit l'icône au survol */
+    transform: scale(1.1);
 }
 
 .footer-copyright {
     margin-top: 20px;
     font-size: 14px;
-    color: #ffffff; /* Couleur plus claire pour le copyright */
+    color: #ffffff;
 }
 
 .footer-copyright p {
     margin: 0;
 }
 
-/* Footer Responsive */
 @media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
@@ -458,6 +453,6 @@
     }
 
     .footer-icons img {
-        width: 30px; /* Réduit la taille des icônes sur mobile */
+        width: 30px;
     }
 }
