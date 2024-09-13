@@ -238,7 +238,7 @@
 }
 
 .rdtitle {
-    margin-top: 70px;
+    margin-top: 20px;
 }
 
 .rdtitle img {
@@ -251,7 +251,7 @@
 
 #roadmap img {
     max-width: 100%;
-    margin-top: -50px;
+    margin-top: 15px;
     height: auto;
 }
 
@@ -259,7 +259,7 @@
     display: flex;
     justify-content: center;
     border: 1px solid #000000;
-    margin-top: -25px;
+    margin-top: 45px;
     padding-bottom: 0;
 }
 
